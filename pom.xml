@@ -99,6 +99,13 @@
         <version>5.0.6</version>
       </dependency>
 
+      <dependency>
+        <!-- command-line argument parsing -->
+        <groupId>info.picocli</groupId>
+        <artifactId>picocli</artifactId>
+        <version>4.7.6</version>
+      </dependency>
+
     </dependencies>
 
   </dependencyManagement>
