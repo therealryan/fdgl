@@ -4,7 +4,7 @@
 
   <groupId>dev.flowty.gl</groupId>
   <artifactId>root</artifactId>
-  <version>0.0.4-SNAPSHOT</version>
+  <version>0.0.4</version>
   <packaging>pom</packaging>
 
   <name>fdgl</name>
@@ -41,7 +41,7 @@
   <scm>
     <connection>scm:git:https://github.com/therealryan/fdgl.git</connection>
     <developerConnection>scm:git:https://github.com/therealryan/fdgl.git</developerConnection>
-    <tag>HEAD</tag>
+    <tag>0.0.4</tag>
     <url>https://github.com/therealryan/fdgl</url>
   </scm>
 
