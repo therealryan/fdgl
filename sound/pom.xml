@@ -5,7 +5,7 @@
   <parent>
     <groupId>dev.flowty.gl</groupId>
     <artifactId>root</artifactId>
-    <version>0.0.1</version>
+    <version>0.0.2-SNAPSHOT</version>
   </parent>
   <groupId>dev.flowty.gl.sound</groupId>
   <artifactId>sound</artifactId>
