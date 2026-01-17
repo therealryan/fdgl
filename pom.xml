@@ -29,6 +29,7 @@
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.release>22</maven.compiler.release>
+    <ci>false</ci> <!-- Set to true to in CI contexts, avoids, e.g.: graphical tests -->
   </properties>
 
   <dependencyManagement>
@@ -157,6 +158,14 @@
           <createBackupFile>false</createBackupFile>
           <expandEmptyElements>false</expandEmptyElements>
           <spaceBeforeCloseEmptyElement>true</spaceBeforeCloseEmptyElement>
+        </configuration>
+      </plugin>
+
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-release-plugin</artifactId>
+        <configuration>
+          <arguments>-Dci=${ci}</arguments>
         </configuration>
       </plugin>
 
