@@ -7,6 +7,17 @@
   <version>0.0.1-SNAPSHOT</version>
   <packaging>pom</packaging>
 
+  <name>fdgl</name>
+  <description>Minimal game lib</description>
+  <url>https://github.com/therealryan/fdgl</url>
+
+  <developers>
+    <developer>
+      <name>Ryan McNally</name>
+      <email>therealryan@gmail.com</email>
+    </developer>
+  </developers>
+
   <modules>
     <module>config</module>
     <module>event</module>
@@ -18,6 +29,14 @@
     <module>xml</module>
     <module>bom</module>
   </modules>
+
+  <licenses>
+    <license>
+      <name>MIT License</name>
+      <url>https://opensource.org/licenses/MIT</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
 
   <scm>
     <connection>scm:git:https://github.com/therealryan/fdgl.git</connection>
