@@ -1,0 +1,524 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- =====================================================================
+  This is the DTD for SVG 1.0.
+
+  The specification for SVG that corresponds to this DTD is available at:
+
+    http://www.w3.org/TR/2001/REC-SVG-20010904/
+
+  Copyright (c) 2000 W3C (MIT, INRIA, Keio), All Rights Reserved.
+
+  For SVG 1.0:
+
+    Namespace:
+      http://www.w3.org/2000/svg  
+
+    Public identifier:
+      PUBLIC "-//W3C//DTD SVG 1.0//EN"
+
+    URI for the DTD:
+      http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd
+============================================================================= --><!-- ==============================================================
+     ENTITY DECLARATIONS: Data types 
+     ============================================================== --><!-- 'baseline-shift' property/attribute value (e.g., 'baseline', 'sub', etc.) --><!-- feature specification --><!-- list of classes --><!-- 'clip' property/attribute value (e.g., 'auto', rect(...)) --><!-- 'clip-path' property/attribute value (e.g., 'none', %URI;) --><!-- 'clip-rule' or fill-rule property/attribute value --><!-- media type, as per [RFC2045] --><!-- a <coordinate> --><!-- a list of <coordinate>s --><!-- a <color> value --><!-- 'cursor' property/attribute value (e.g., 'crosshair', %URI;) --><!-- 'enable-background' property/attribute value (e.g., 'new', 'accumulate') --><!-- extension list specification --><!-- feature list specification --><!-- 'filter' property/attribute value (e.g., 'none', %URI;) --><!-- 'font-family' property/attribute value (i.e., list of fonts) --><!-- 'font-size' property/attribute value --><!-- 'font-size-adjust' property/attribute value --><!-- 'glyph-orientation-horizontal' property/attribute value (e.g., <angle>) --><!-- 'glyph-orientation-vertical' property/attribute value (e.g., 'auto', <angle>) --><!-- a <integer> --><!-- 'kerning' property/attribute value (e.g., auto | <length>) --><!-- a language code, as per [RFC3066] --><!-- comma-separated list of language codes, as per [RFC3066] --><!-- a <length> --><!-- a list of <length>s --><!-- link to this target --><!-- 'marker' property/attribute value (e.g., 'none', %URI;) --><!-- 'mask' property/attribute value (e.g., 'none', %URI;) --><!-- comma-separated list of media descriptors. --><!-- a <number> --><!-- list of <number>s, but at least one and at most two --><!-- a <number> or a  <percentage> --><!-- a list of <number>s --><!-- opacity value (e.g., <number>) --><!-- a 'fill' or 'stroke' property/attribute value: <paint> --><!-- a path data specification --><!-- a list of points --><!-- 'preserveAspectRatio' attribute specification --><!-- script expression --><!-- 'letter-spacing' or 'word-spacing' property/attribute value (e.g., normal | <length>) --><!-- 'stroke-dasharray' property/attribute value (e.g., 'none', list of <number>s) --><!-- 'stroke-dashoffset' property/attribute value (e.g., 'none', <legnth>) --><!-- 'stroke-miterlimit' property/attribute value (e.g., <number>) --><!-- 'stroke-width' property/attribute value (e.g., <length>) --><!-- style sheet data --><!-- An SVG color value (RGB plus optional ICC) --><!-- arbitrary text string --><!-- 'text-decoration' property/attribute value (e.g., 'none', 'underline') --><!-- list of transforms --><!-- a Uniform Resource Identifier, see [URI] --><!-- 'viewBox' attribute specification --><!-- ==============================================================
+     ENTITY DECLARATIONS: Collections of common attributes 
+     ============================================================== --><!-- All elements have an ID. --><!-- Common attributes for elements that might contain character data content. --><!-- Common attributes to check for system capabilities. --><!-- For most uses of URI referencing:
+        standard XLink attributes other than xlink:href. --><!-- Standard XLink attributes for uses of URI referencing where xlink:show is 'embed' --><!-- This entity allows for at most one of desc, title and metadata,
+     supplied in any order --><!-- ==============================================================
+     ENTITY DECLARATIONS: Collections of presentation attributes 
+     ============================================================== --><!-- The following presentation attributes have to do with specifying color. --><!-- The following presentation attributes apply to container elements. --><!-- The following presentation attributes apply to 'feFlood' elements. --><!-- The following presentation attributes apply to filling and stroking operations. --><!-- The following presentation attributes apply to filter primitives. --><!-- The following presentation attributes have to do with selecting a font to use. --><!-- The following presentation attributes apply to gradient 'stop' elements. --><!-- The following presentation attributes apply to graphics elements. --><!-- The following presentation attributes apply to 'image' elements. --><!--The following presentation attributes apply to 'feDiffuseLighting' and 'feSpecularLighting' elements. --><!-- The following presentation attributes apply to marker operations. --><!-- The following presentation attributes apply to text content elements. --><!-- The following presentation attributes apply to 'text' elements. --><!-- The following presentation attributes apply to elements that establish viewports. --><!--The following represents the complete list of presentation attributes. --><!-- ==============================================================
+     ENTITY DECLARATIONS: DTD extensions 
+     ============================================================== --><!-- Allow for extending the DTD with internal subset for 
+     container and graphics elements --><!-- ==============================================================
+     DECLARATIONS CORRESPONDING TO: Document Structure 
+     ============================================================== --><!-- ==============================================================
+     DECLARATIONS CORRESPONDING TO: Styling 
+     ============================================================== --><!-- ==============================================================
+     DECLARATIONS CORRESPONDING TO: Paths
+     ============================================================== --><!-- ==============================================================
+     DECLARATIONS CORRESPONDING TO: Basic Shapes
+     ============================================================== --><!-- ==============================================================
+     DECLARATIONS CORRESPONDING TO: Text
+     ============================================================== --><!-- ==============================================================
+     DECLARATIONS CORRESPONDING TO: Painting: Filling, Stroking and Marker Symbols 
+     ============================================================== --><!-- ==============================================================
+     DECLARATIONS CORRESPONDING TO: Color 
+     ============================================================== --><!-- ==============================================================
+     DECLARATIONS CORRESPONDING TO: Gradients and Patterns 
+     ============================================================== --><!-- ==============================================================
+     DECLARATIONS CORRESPONDING TO: Clipping, Masking and Compositing 
+     ============================================================== --><!-- ==============================================================
+     DECLARATIONS CORRESPONDING TO: Filter Effects
+     ============================================================== --><!-- ==============================================================
+     DECLARATIONS CORRESPONDING TO: Interactivity 
+     ============================================================== --><!-- ==============================================================
+     DECLARATIONS CORRESPONDING TO: Linking
+     ============================================================== --><!-- ==============================================================
+     DECLARATIONS CORRESPONDING TO: Scripting 
+     ============================================================== --><!-- ==============================================================
+     DECLARATIONS CORRESPONDING TO: Animation 
+     ============================================================== --><!-- ==============================================================
+     DECLARATIONS CORRESPONDING TO: Fonts 
+     ============================================================== --><!-- ==============================================================
+     DECLARATIONS CORRESPONDING TO: Metadata 
+     ============================================================== --><!-- ==============================================================
+     DECLARATIONS CORRESPONDING TO: Extensibility 
+     ============================================================== --><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:jfreesvg="http://www.jfree.org/jfreesvg/svg" width="399.0625" height="667.8125" preserveAspectRatio="xMidYMid meet" zoomAndPan="magnify" version="1.0" contentScriptType="text/ecmascript" contentStyleType="text/css">
+  <ellipse cx="76.0" cy="-382.0" rx="3.0" ry="3.0" style="stroke-width:1.0;stroke:rgb(255,0,0);stroke-opacity:0.2509804;stroke-linecap:square;stroke-miterlimit:10.0;fill:none" transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)"/>
+  <g transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)">
+    <text x="72.671875" y="-375.140625" style="fill: rgb(0,0,0); fill-opacity: 1.0; font-family: sans-serif; font-size: 12px;">0</text>
+  </g>
+  <ellipse cx="76.0" cy="-437.0" rx="3.0" ry="3.0" style="stroke-width:1.0;stroke:rgb(255,0,0);stroke-opacity:0.2509804;stroke-linecap:square;stroke-miterlimit:10.0;fill:none" transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)"/>
+  <g transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)">
+    <text x="72.671875" y="-431.0" style="fill: rgb(0,0,0); fill-opacity: 1.0; font-family: sans-serif; font-size: 12px;">1</text>
+  </g>
+  <ellipse cx="193.0" cy="-437.0" rx="3.0" ry="3.0" style="stroke-width:1.0;stroke:rgb(255,0,0);stroke-opacity:0.2509804;stroke-linecap:square;stroke-miterlimit:10.0;fill:none" transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)"/>
+  <g transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)">
+    <text x="189.46875" y="-431.0" style="fill: rgb(0,0,0); fill-opacity: 1.0; font-family: sans-serif; font-size: 12px;">2</text>
+  </g>
+  <ellipse cx="193.0" cy="-468.0" rx="3.0" ry="3.0" style="stroke-width:1.0;stroke:rgb(255,0,0);stroke-opacity:0.2509804;stroke-linecap:square;stroke-miterlimit:10.0;fill:none" transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)"/>
+  <g transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)">
+    <text x="189.46875" y="-461.46875" style="fill: rgb(0,0,0); fill-opacity: 1.0; font-family: sans-serif; font-size: 12px;">3</text>
+  </g>
+  <ellipse cx="195.0" cy="-502.0" rx="3.0" ry="3.0" style="stroke-width:1.0;stroke:rgb(255,0,0);stroke-opacity:0.2509804;stroke-linecap:square;stroke-miterlimit:10.0;fill:none" transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)"/>
+  <g transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)">
+    <text x="191.53125" y="-495.0380859375" style="fill: rgb(0,0,0); fill-opacity: 1.0; font-family: sans-serif; font-size: 12px;">4</text>
+  </g>
+  <ellipse cx="201.0" cy="-530.0" rx="3.0" ry="3.0" style="stroke-width:1.0;stroke:rgb(255,0,0);stroke-opacity:0.2509804;stroke-linecap:square;stroke-miterlimit:10.0;fill:none" transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)"/>
+  <g transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)">
+    <text x="197.71875" y="-523.87109375" style="fill: rgb(0,0,0); fill-opacity: 1.0; font-family: sans-serif; font-size: 12px;">5</text>
+  </g>
+  <ellipse cx="212.0" cy="-554.0" rx="3.0" ry="3.0" style="stroke-width:1.0;stroke:rgb(255,0,0);stroke-opacity:0.2509804;stroke-linecap:square;stroke-miterlimit:10.0;fill:none" transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)"/>
+  <g transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)">
+    <text x="208.03125" y="-547.9677734375" style="fill: rgb(0,0,0); fill-opacity: 1.0; font-family: sans-serif; font-size: 12px;">6</text>
+  </g>
+  <ellipse cx="226.0" cy="-574.0" rx="3.0" ry="3.0" style="stroke-width:1.0;stroke:rgb(255,0,0);stroke-opacity:0.2509804;stroke-linecap:square;stroke-miterlimit:10.0;fill:none" transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)"/>
+  <g transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)">
+    <text x="222.46875" y="-567.328125" style="fill: rgb(0,0,0); fill-opacity: 1.0; font-family: sans-serif; font-size: 12px;">7</text>
+  </g>
+  <ellipse cx="245.0" cy="-589.0" rx="3.0" ry="3.0" style="stroke-width:1.0;stroke:rgb(255,0,0);stroke-opacity:0.2509804;stroke-linecap:square;stroke-miterlimit:10.0;fill:none" transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)"/>
+  <g transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)">
+    <text x="241.283203125" y="-582.1962890625" style="fill: rgb(0,0,0); fill-opacity: 1.0; font-family: sans-serif; font-size: 12px;">8</text>
+  </g>
+  <ellipse cx="268.0" cy="-599.0" rx="3.0" ry="3.0" style="stroke-width:1.0;stroke:rgb(255,0,0);stroke-opacity:0.2509804;stroke-linecap:square;stroke-miterlimit:10.0;fill:none" transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)"/>
+  <g transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)">
+    <text x="264.7109375" y="-592.81640625" style="fill: rgb(0,0,0); fill-opacity: 1.0; font-family: sans-serif; font-size: 12px;">9</text>
+  </g>
+  <ellipse cx="296.0" cy="-606.0" rx="3.0" ry="3.0" style="stroke-width:1.0;stroke:rgb(255,0,0);stroke-opacity:0.2509804;stroke-linecap:square;stroke-miterlimit:10.0;fill:none" transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)"/>
+  <g transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)">
+    <text x="289.251953125" y="-599.1884765625" style="fill: rgb(0,0,0); fill-opacity: 1.0; font-family: sans-serif; font-size: 12px;">10</text>
+  </g>
+  <ellipse cx="329.0" cy="-608.0" rx="3.0" ry="3.0" style="stroke-width:1.0;stroke:rgb(255,0,0);stroke-opacity:0.2509804;stroke-linecap:square;stroke-miterlimit:10.0;fill:none" transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)"/>
+  <g transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)">
+    <text x="321.90625" y="-601.3125" style="fill: rgb(0,0,0); fill-opacity: 1.0; font-family: sans-serif; font-size: 12px;">11</text>
+  </g>
+  <ellipse cx="415.0" cy="-608.0" rx="3.0" ry="3.0" style="stroke-width:1.0;stroke:rgb(255,0,0);stroke-opacity:0.2509804;stroke-linecap:square;stroke-miterlimit:10.0;fill:none" transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)"/>
+  <g transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)">
+    <text x="408.234375" y="-601.3125" style="fill: rgb(0,0,0); fill-opacity: 1.0; font-family: sans-serif; font-size: 12px;">12</text>
+  </g>
+  <ellipse cx="415.0" cy="-548.0" rx="3.0" ry="3.0" style="stroke-width:1.0;stroke:rgb(255,0,0);stroke-opacity:0.2509804;stroke-linecap:square;stroke-miterlimit:10.0;fill:none" transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)"/>
+  <g transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)">
+    <text x="408.234375" y="-541.546875" style="fill: rgb(0,0,0); fill-opacity: 1.0; font-family: sans-serif; font-size: 12px;">13</text>
+  </g>
+  <ellipse cx="334.0" cy="-548.0" rx="3.0" ry="3.0" style="stroke-width:1.0;stroke:rgb(255,0,0);stroke-opacity:0.2509804;stroke-linecap:square;stroke-miterlimit:10.0;fill:none" transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)"/>
+  <g transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)">
+    <text x="326.59375" y="-541.546875" style="fill: rgb(0,0,0); fill-opacity: 1.0; font-family: sans-serif; font-size: 12px;">14</text>
+  </g>
+  <ellipse cx="316.0" cy="-547.0" rx="3.0" ry="3.0" style="stroke-width:1.0;stroke:rgb(255,0,0);stroke-opacity:0.2509804;stroke-linecap:square;stroke-miterlimit:10.0;fill:none" transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)"/>
+  <g transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)">
+    <text x="308.734375" y="-540.5576171875" style="fill: rgb(0,0,0); fill-opacity: 1.0; font-family: sans-serif; font-size: 12px;">15</text>
+  </g>
+  <ellipse cx="301.0" cy="-544.0" rx="3.0" ry="3.0" style="stroke-width:1.0;stroke:rgb(255,0,0);stroke-opacity:0.2509804;stroke-linecap:square;stroke-miterlimit:10.0;fill:none" transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)"/>
+  <g transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)">
+    <text x="293.828125" y="-537.58984375" style="fill: rgb(0,0,0); fill-opacity: 1.0; font-family: sans-serif; font-size: 12px;">16</text>
+  </g>
+  <ellipse cx="289.0" cy="-539.0" rx="3.0" ry="3.0" style="stroke-width:1.0;stroke:rgb(255,0,0);stroke-opacity:0.2509804;stroke-linecap:square;stroke-miterlimit:10.0;fill:none" transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)"/>
+  <g transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)">
+    <text x="281.875" y="-532.6435546875" style="fill: rgb(0,0,0); fill-opacity: 1.0; font-family: sans-serif; font-size: 12px;">17</text>
+  </g>
+  <ellipse cx="280.0" cy="-532.0" rx="3.0" ry="3.0" style="stroke-width:1.0;stroke:rgb(255,0,0);stroke-opacity:0.2509804;stroke-linecap:square;stroke-miterlimit:10.0;fill:none" transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)"/>
+  <g transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)">
+    <text x="272.875" y="-525.71875" style="fill: rgb(0,0,0); fill-opacity: 1.0; font-family: sans-serif; font-size: 12px;">18</text>
+  </g>
+  <ellipse cx="273.0" cy="-523.0" rx="3.0" ry="3.0" style="stroke-width:1.0;stroke:rgb(255,0,0);stroke-opacity:0.2509804;stroke-linecap:square;stroke-miterlimit:10.0;fill:none" transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)"/>
+  <g transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)">
+    <text x="266.298828125" y="-516.2861328125" style="fill: rgb(0,0,0); fill-opacity: 1.0; font-family: sans-serif; font-size: 12px;">19</text>
+  </g>
+  <ellipse cx="269.0" cy="-510.0" rx="3.0" ry="3.0" style="stroke-width:1.0;stroke:rgb(255,0,0);stroke-opacity:0.2509804;stroke-linecap:square;stroke-miterlimit:10.0;fill:none" transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)"/>
+  <g transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)">
+    <text x="261.6015625" y="-503.80078125" style="fill: rgb(0,0,0); fill-opacity: 1.0; font-family: sans-serif; font-size: 12px;">20</text>
+  </g>
+  <ellipse cx="266.0" cy="-495.0" rx="3.0" ry="3.0" style="stroke-width:1.0;stroke:rgb(255,0,0);stroke-opacity:0.2509804;stroke-linecap:square;stroke-miterlimit:10.0;fill:none" transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)"/>
+  <g transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)">
+    <text x="258.783203125" y="-488.2626953125" style="fill: rgb(0,0,0); fill-opacity: 1.0; font-family: sans-serif; font-size: 12px;">21</text>
+  </g>
+  <ellipse cx="265.0" cy="-476.0" rx="3.0" ry="3.0" style="stroke-width:1.0;stroke:rgb(255,0,0);stroke-opacity:0.2509804;stroke-linecap:square;stroke-miterlimit:10.0;fill:none" transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)"/>
+  <g transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)">
+    <text x="257.84375" y="-469.671875" style="fill: rgb(0,0,0); fill-opacity: 1.0; font-family: sans-serif; font-size: 12px;">22</text>
+  </g>
+  <ellipse cx="265.0" cy="-437.0" rx="3.0" ry="3.0" style="stroke-width:1.0;stroke:rgb(255,0,0);stroke-opacity:0.2509804;stroke-linecap:square;stroke-miterlimit:10.0;fill:none" transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)"/>
+  <g transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)">
+    <text x="257.84375" y="-431.0" style="fill: rgb(0,0,0); fill-opacity: 1.0; font-family: sans-serif; font-size: 12px;">23</text>
+  </g>
+  <ellipse cx="415.0" cy="-437.0" rx="3.0" ry="3.0" style="stroke-width:1.0;stroke:rgb(255,0,0);stroke-opacity:0.2509804;stroke-linecap:square;stroke-miterlimit:10.0;fill:none" transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)"/>
+  <g transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)">
+    <text x="408.234375" y="-431.0" style="fill: rgb(0,0,0); fill-opacity: 1.0; font-family: sans-serif; font-size: 12px;">24</text>
+  </g>
+  <ellipse cx="415.0" cy="-382.0" rx="3.0" ry="3.0" style="stroke-width:1.0;stroke:rgb(255,0,0);stroke-opacity:0.2509804;stroke-linecap:square;stroke-miterlimit:10.0;fill:none" transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)"/>
+  <g transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)">
+    <text x="408.234375" y="-375.140625" style="fill: rgb(0,0,0); fill-opacity: 1.0; font-family: sans-serif; font-size: 12px;">25</text>
+  </g>
+  <ellipse cx="265.0" cy="-382.0" rx="3.0" ry="3.0" style="stroke-width:1.0;stroke:rgb(255,0,0);stroke-opacity:0.2509804;stroke-linecap:square;stroke-miterlimit:10.0;fill:none" transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)"/>
+  <g transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)">
+    <text x="257.84375" y="-375.140625" style="fill: rgb(0,0,0); fill-opacity: 1.0; font-family: sans-serif; font-size: 12px;">26</text>
+  </g>
+  <ellipse cx="265.0" cy="0.0" rx="3.0" ry="3.0" style="stroke-width:1.0;stroke:rgb(255,0,0);stroke-opacity:0.2509804;stroke-linecap:square;stroke-miterlimit:10.0;fill:none" transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)"/>
+  <g transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)">
+    <text x="257.84375" y="6.5" style="fill: rgb(0,0,0); fill-opacity: 1.0; font-family: sans-serif; font-size: 12px;">27</text>
+  </g>
+  <ellipse cx="193.0" cy="0.0" rx="3.0" ry="3.0" style="stroke-width:1.0;stroke:rgb(255,0,0);stroke-opacity:0.2509804;stroke-linecap:square;stroke-miterlimit:10.0;fill:none" transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)"/>
+  <g transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)">
+    <text x="185.96875" y="6.5" style="fill: rgb(0,0,0); fill-opacity: 1.0; font-family: sans-serif; font-size: 12px;">28</text>
+  </g>
+  <ellipse cx="193.0" cy="-382.0" rx="3.0" ry="3.0" style="stroke-width:1.0;stroke:rgb(255,0,0);stroke-opacity:0.2509804;stroke-linecap:square;stroke-miterlimit:10.0;fill:none" transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)"/>
+  <g transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)">
+    <text x="185.96875" y="-375.140625" style="fill: rgb(0,0,0); fill-opacity: 1.0; font-family: sans-serif; font-size: 12px;">29</text>
+  </g>
+  <line x1="76.0" y1="-382.0" x2="76.0" y2="-437.0" style="stroke-width:1.0;stroke:rgb(0,0,255);stroke-opacity:0.2509804;stroke-linecap:square;stroke-miterlimit:10.0" transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)"/>
+  <line x1="76.0" y1="-437.0" x2="193.0" y2="-437.0" style="stroke-width:1.0;stroke:rgb(0,0,255);stroke-opacity:0.2509804;stroke-linecap:square;stroke-miterlimit:10.0" transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)"/>
+  <line x1="193.0" y1="-437.0" x2="76.0" y2="-382.0" style="stroke-width:1.0;stroke:rgb(0,0,255);stroke-opacity:0.2509804;stroke-linecap:square;stroke-miterlimit:10.0" transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)"/>
+  <g transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)">
+    <text x="85.6493148803711" y="-387.5538330078125" style="fill: rgb(0,0,255); fill-opacity: 0.2509804; font-family: sans-serif; font-size: 12px;">a</text>
+  </g>
+  <g transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)">
+    <text x="85.6493148803711" y="-424.7934265136719" style="fill: rgb(0,0,255); fill-opacity: 0.2509804; font-family: sans-serif; font-size: 12px;">b</text>
+  </g>
+  <g transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)">
+    <text x="164.01390075683594" y="-424.7934265136719" style="fill: rgb(0,0,255); fill-opacity: 0.2509804; font-family: sans-serif; font-size: 12px;">c</text>
+  </g>
+  <line x1="212.0" y1="-554.0" x2="269.0" y2="-510.0" style="stroke-width:1.0;stroke:rgb(0,0,255);stroke-opacity:0.2509804;stroke-linecap:square;stroke-miterlimit:10.0" transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)"/>
+  <line x1="269.0" y1="-510.0" x2="201.0" y2="-530.0" style="stroke-width:1.0;stroke:rgb(0,0,255);stroke-opacity:0.2509804;stroke-linecap:square;stroke-miterlimit:10.0" transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)"/>
+  <line x1="201.0" y1="-530.0" x2="212.0" y2="-554.0" style="stroke-width:1.0;stroke:rgb(0,0,255);stroke-opacity:0.2509804;stroke-linecap:square;stroke-miterlimit:10.0" transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)"/>
+  <g transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)">
+    <text x="213.2265625" y="-540.3829345703125" style="fill: rgb(0,0,255); fill-opacity: 0.2509804; font-family: sans-serif; font-size: 12px;">a</text>
+  </g>
+  <g transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)">
+    <text x="251.2734375" y="-510.93829345703125" style="fill: rgb(0,0,255); fill-opacity: 0.2509804; font-family: sans-serif; font-size: 12px;">b</text>
+  </g>
+  <g transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)">
+    <text x="206.8515625" y="-524.3184814453125" style="fill: rgb(0,0,255); fill-opacity: 0.2509804; font-family: sans-serif; font-size: 12px;">c</text>
+  </g>
+  <line x1="269.0" y1="-510.0" x2="212.0" y2="-554.0" style="stroke-width:1.0;stroke:rgb(0,0,255);stroke-opacity:0.2509804;stroke-linecap:square;stroke-miterlimit:10.0" transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)"/>
+  <line x1="212.0" y1="-554.0" x2="273.0" y2="-523.0" style="stroke-width:1.0;stroke:rgb(0,0,255);stroke-opacity:0.2509804;stroke-linecap:square;stroke-miterlimit:10.0" transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)"/>
+  <line x1="273.0" y1="-523.0" x2="269.0" y2="-510.0" style="stroke-width:1.0;stroke:rgb(0,0,255);stroke-opacity:0.2509804;stroke-linecap:square;stroke-miterlimit:10.0" transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)"/>
+  <g transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)">
+    <text x="259.2823486328125" y="-510.09552001953125" style="fill: rgb(0,0,255); fill-opacity: 0.2509804; font-family: sans-serif; font-size: 12px;">a</text>
+  </g>
+  <g transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)">
+    <text x="221.2354736328125" y="-539.5401611328125" style="fill: rgb(0,0,255); fill-opacity: 0.2509804; font-family: sans-serif; font-size: 12px;">b</text>
+  </g>
+  <g transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)">
+    <text x="262.91387939453125" y="-518.4190673828125" style="fill: rgb(0,0,255); fill-opacity: 0.2509804; font-family: sans-serif; font-size: 12px;">c</text>
+  </g>
+  <line x1="280.0" y1="-532.0" x2="226.0" y2="-574.0" style="stroke-width:1.0;stroke:rgb(0,0,255);stroke-opacity:0.2509804;stroke-linecap:square;stroke-miterlimit:10.0" transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)"/>
+  <line x1="226.0" y1="-574.0" x2="245.0" y2="-589.0" style="stroke-width:1.0;stroke:rgb(0,0,255);stroke-opacity:0.2509804;stroke-linecap:square;stroke-miterlimit:10.0" transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)"/>
+  <line x1="245.0" y1="-589.0" x2="280.0" y2="-532.0" style="stroke-width:1.0;stroke:rgb(0,0,255);stroke-opacity:0.2509804;stroke-linecap:square;stroke-miterlimit:10.0" transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)"/>
+  <g transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)">
+    <text x="266.486328125" y="-536.6173095703125" style="fill: rgb(0,0,255); fill-opacity: 0.2509804; font-family: sans-serif; font-size: 12px;">a</text>
+  </g>
+  <g transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)">
+    <text x="230.548828125" y="-564.35693359375" style="fill: rgb(0,0,255); fill-opacity: 0.2509804; font-family: sans-serif; font-size: 12px;">b</text>
+  </g>
+  <g transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)">
+    <text x="243.591796875" y="-574.26904296875" style="fill: rgb(0,0,255); fill-opacity: 0.2509804; font-family: sans-serif; font-size: 12px;">c</text>
+  </g>
+  <line x1="329.0" y1="-608.0" x2="316.0" y2="-547.0" style="stroke-width:1.0;stroke:rgb(0,0,255);stroke-opacity:0.2509804;stroke-linecap:square;stroke-miterlimit:10.0" transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)"/>
+  <line x1="316.0" y1="-547.0" x2="296.0" y2="-606.0" style="stroke-width:1.0;stroke:rgb(0,0,255);stroke-opacity:0.2509804;stroke-linecap:square;stroke-miterlimit:10.0" transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)"/>
+  <line x1="296.0" y1="-606.0" x2="329.0" y2="-608.0" style="stroke-width:1.0;stroke:rgb(0,0,255);stroke-opacity:0.2509804;stroke-linecap:square;stroke-miterlimit:10.0" transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)"/>
+  <g transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)">
+    <text x="320.314453125" y="-594.3259887695312" style="fill: rgb(0,0,255); fill-opacity: 0.2509804; font-family: sans-serif; font-size: 12px;">a</text>
+  </g>
+  <g transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)">
+    <text x="311.533203125" y="-553.82275390625" style="fill: rgb(0,0,255); fill-opacity: 0.2509804; font-family: sans-serif; font-size: 12px;">b</text>
+  </g>
+  <g transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)">
+    <text x="299.044921875" y="-592.9099731445312" style="fill: rgb(0,0,255); fill-opacity: 0.2509804; font-family: sans-serif; font-size: 12px;">c</text>
+  </g>
+  <line x1="334.0" y1="-548.0" x2="329.0" y2="-608.0" style="stroke-width:1.0;stroke:rgb(0,0,255);stroke-opacity:0.2509804;stroke-linecap:square;stroke-miterlimit:10.0" transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)"/>
+  <line x1="329.0" y1="-608.0" x2="415.0" y2="-608.0" style="stroke-width:1.0;stroke:rgb(0,0,255);stroke-opacity:0.2509804;stroke-linecap:square;stroke-miterlimit:10.0" transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)"/>
+  <line x1="415.0" y1="-608.0" x2="334.0" y2="-548.0" style="stroke-width:1.0;stroke:rgb(0,0,255);stroke-opacity:0.2509804;stroke-linecap:square;stroke-miterlimit:10.0" transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)"/>
+  <g transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)">
+    <text x="338.6441345214844" y="-554.828125" style="fill: rgb(0,0,255); fill-opacity: 0.2509804; font-family: sans-serif; font-size: 12px;">a</text>
+  </g>
+  <g transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)">
+    <text x="335.51910400390625" y="-594.671875" style="fill: rgb(0,0,255); fill-opacity: 0.2509804; font-family: sans-serif; font-size: 12px;">b</text>
+  </g>
+  <g transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)">
+    <text x="393.57122802734375" y="-594.671875" style="fill: rgb(0,0,255); fill-opacity: 0.2509804; font-family: sans-serif; font-size: 12px;">c</text>
+  </g>
+  <line x1="415.0" y1="-608.0" x2="415.0" y2="-548.0" style="stroke-width:1.0;stroke:rgb(0,0,255);stroke-opacity:0.2509804;stroke-linecap:square;stroke-miterlimit:10.0" transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)"/>
+  <line x1="415.0" y1="-548.0" x2="334.0" y2="-548.0" style="stroke-width:1.0;stroke:rgb(0,0,255);stroke-opacity:0.2509804;stroke-linecap:square;stroke-miterlimit:10.0" transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)"/>
+  <line x1="334.0" y1="-548.0" x2="415.0" y2="-608.0" style="stroke-width:1.0;stroke:rgb(0,0,255);stroke-opacity:0.2509804;stroke-linecap:square;stroke-miterlimit:10.0" transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)"/>
+  <g transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)">
+    <text x="402.6632080078125" y="-588.03125" style="fill: rgb(0,0,255); fill-opacity: 0.2509804; font-family: sans-serif; font-size: 12px;">a</text>
+  </g>
+  <g transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)">
+    <text x="402.6632080078125" y="-548.1875" style="fill: rgb(0,0,255); fill-opacity: 0.2509804; font-family: sans-serif; font-size: 12px;">b</text>
+  </g>
+  <g transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)">
+    <text x="348.73614501953125" y="-548.1875" style="fill: rgb(0,0,255); fill-opacity: 0.2509804; font-family: sans-serif; font-size: 12px;">c</text>
+  </g>
+  <line x1="265.0" y1="-437.0" x2="415.0" y2="-437.0" style="stroke-width:1.0;stroke:rgb(0,0,255);stroke-opacity:0.2509804;stroke-linecap:square;stroke-miterlimit:10.0" transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)"/>
+  <line x1="415.0" y1="-437.0" x2="415.0" y2="-382.0" style="stroke-width:1.0;stroke:rgb(0,0,255);stroke-opacity:0.2509804;stroke-linecap:square;stroke-miterlimit:10.0" transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)"/>
+  <line x1="415.0" y1="-382.0" x2="265.0" y2="-437.0" style="stroke-width:1.0;stroke:rgb(0,0,255);stroke-opacity:0.2509804;stroke-linecap:square;stroke-miterlimit:10.0" transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)"/>
+  <g transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)">
+    <text x="294.763916015625" y="-424.7934265136719" style="fill: rgb(0,0,255); fill-opacity: 0.2509804; font-family: sans-serif; font-size: 12px;">a</text>
+  </g>
+  <g transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)">
+    <text x="395.02435302734375" y="-424.7934265136719" style="fill: rgb(0,0,255); fill-opacity: 0.2509804; font-family: sans-serif; font-size: 12px;">b</text>
+  </g>
+  <g transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)">
+    <text x="395.52435302734375" y="-387.5538330078125" style="fill: rgb(0,0,255); fill-opacity: 0.2509804; font-family: sans-serif; font-size: 12px;">c</text>
+  </g>
+  <line x1="265.0" y1="-382.0" x2="265.0" y2="0.0" style="stroke-width:1.0;stroke:rgb(0,0,255);stroke-opacity:0.2509804;stroke-linecap:square;stroke-miterlimit:10.0" transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)"/>
+  <line x1="265.0" y1="0.0" x2="193.0" y2="0.0" style="stroke-width:1.0;stroke:rgb(0,0,255);stroke-opacity:0.2509804;stroke-linecap:square;stroke-miterlimit:10.0" transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)"/>
+  <line x1="193.0" y1="0.0" x2="265.0" y2="-382.0" style="stroke-width:1.0;stroke:rgb(0,0,255);stroke-opacity:0.2509804;stroke-linecap:square;stroke-miterlimit:10.0" transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)"/>
+  <g transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)">
+    <text x="253.357666015625" y="-290.33160400390625" style="fill: rgb(0,0,255); fill-opacity: 0.2509804; font-family: sans-serif; font-size: 12px;">a</text>
+  </g>
+  <g transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)">
+    <text x="253.357666015625" y="-35.904518127441406" style="fill: rgb(0,0,255); fill-opacity: 0.2509804; font-family: sans-serif; font-size: 12px;">b</text>
+  </g>
+  <g transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)">
+    <text x="205.94097900390625" y="-35.904518127441406" style="fill: rgb(0,0,255); fill-opacity: 0.2509804; font-family: sans-serif; font-size: 12px;">c</text>
+  </g>
+  <line x1="193.0" y1="-382.0" x2="76.0" y2="-382.0" style="stroke-width:1.0;stroke:rgb(0,0,255);stroke-opacity:0.2509804;stroke-linecap:square;stroke-miterlimit:10.0" transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)"/>
+  <line x1="76.0" y1="-382.0" x2="193.0" y2="-437.0" style="stroke-width:1.0;stroke:rgb(0,0,255);stroke-opacity:0.2509804;stroke-linecap:square;stroke-miterlimit:10.0" transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)"/>
+  <line x1="193.0" y1="-437.0" x2="193.0" y2="-382.0" style="stroke-width:1.0;stroke:rgb(0,0,255);stroke-opacity:0.2509804;stroke-linecap:square;stroke-miterlimit:10.0" transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)"/>
+  <g transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)">
+    <text x="176.4913330078125" y="-381.3472595214844" style="fill: rgb(0,0,255); fill-opacity: 0.2509804; font-family: sans-serif; font-size: 12px;">a</text>
+  </g>
+  <g transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)">
+    <text x="98.62673950195312" y="-381.3472595214844" style="fill: rgb(0,0,255); fill-opacity: 0.2509804; font-family: sans-serif; font-size: 12px;">b</text>
+  </g>
+  <g transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)">
+    <text x="176.9913330078125" y="-418.58685302734375" style="fill: rgb(0,0,255); fill-opacity: 0.2509804; font-family: sans-serif; font-size: 12px;">c</text>
+  </g>
+  <line x1="266.0" y1="-495.0" x2="201.0" y2="-530.0" style="stroke-width:1.0;stroke:rgb(0,0,255);stroke-opacity:0.2509804;stroke-linecap:square;stroke-miterlimit:10.0" transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)"/>
+  <line x1="201.0" y1="-530.0" x2="269.0" y2="-510.0" style="stroke-width:1.0;stroke:rgb(0,0,255);stroke-opacity:0.2509804;stroke-linecap:square;stroke-miterlimit:10.0" transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)"/>
+  <line x1="269.0" y1="-510.0" x2="266.0" y2="-495.0" style="stroke-width:1.0;stroke:rgb(0,0,255);stroke-opacity:0.2509804;stroke-linecap:square;stroke-miterlimit:10.0" transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)"/>
+  <g transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)">
+    <text x="255.42254638671875" y="-493.9456481933594" style="fill: rgb(0,0,255); fill-opacity: 0.2509804; font-family: sans-serif; font-size: 12px;">a</text>
+  </g>
+  <g transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)">
+    <text x="212.3795623779297" y="-517.6845703125" style="fill: rgb(0,0,255); fill-opacity: 0.2509804; font-family: sans-serif; font-size: 12px;">b</text>
+  </g>
+  <g transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)">
+    <text x="257.80145263671875" y="-504.30438232421875" style="fill: rgb(0,0,255); fill-opacity: 0.2509804; font-family: sans-serif; font-size: 12px;">c</text>
+  </g>
+  <line x1="289.0" y1="-539.0" x2="245.0" y2="-589.0" style="stroke-width:1.0;stroke:rgb(0,0,255);stroke-opacity:0.2509804;stroke-linecap:square;stroke-miterlimit:10.0" transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)"/>
+  <line x1="245.0" y1="-589.0" x2="268.0" y2="-599.0" style="stroke-width:1.0;stroke:rgb(0,0,255);stroke-opacity:0.2509804;stroke-linecap:square;stroke-miterlimit:10.0" transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)"/>
+  <line x1="268.0" y1="-599.0" x2="289.0" y2="-539.0" style="stroke-width:1.0;stroke:rgb(0,0,255);stroke-opacity:0.2509804;stroke-linecap:square;stroke-miterlimit:10.0" transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)"/>
+  <g transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)">
+    <text x="278.179931640625" y="-544.8353271484375" style="fill: rgb(0,0,255); fill-opacity: 0.2509804; font-family: sans-serif; font-size: 12px;">a</text>
+  </g>
+  <g transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)">
+    <text x="248.78538513183594" y="-577.8704833984375" style="fill: rgb(0,0,255); fill-opacity: 0.2509804; font-family: sans-serif; font-size: 12px;">b</text>
+  </g>
+  <g transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)">
+    <text x="264.90386962890625" y="-584.9505615234375" style="fill: rgb(0,0,255); fill-opacity: 0.2509804; font-family: sans-serif; font-size: 12px;">c</text>
+  </g>
+  <line x1="316.0" y1="-547.0" x2="329.0" y2="-608.0" style="stroke-width:1.0;stroke:rgb(0,0,255);stroke-opacity:0.2509804;stroke-linecap:square;stroke-miterlimit:10.0" transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)"/>
+  <line x1="329.0" y1="-608.0" x2="334.0" y2="-548.0" style="stroke-width:1.0;stroke:rgb(0,0,255);stroke-opacity:0.2509804;stroke-linecap:square;stroke-miterlimit:10.0" transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)"/>
+  <line x1="334.0" y1="-548.0" x2="316.0" y2="-547.0" style="stroke-width:1.0;stroke:rgb(0,0,255);stroke-opacity:0.2509804;stroke-linecap:square;stroke-miterlimit:10.0" transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)"/>
+  <g transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)">
+    <text x="315.68231201171875" y="-547.4180908203125" style="fill: rgb(0,0,255); fill-opacity: 0.2509804; font-family: sans-serif; font-size: 12px;">a</text>
+  </g>
+  <g transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)">
+    <text x="324.46356201171875" y="-587.92138671875" style="fill: rgb(0,0,255); fill-opacity: 0.2509804; font-family: sans-serif; font-size: 12px;">b</text>
+  </g>
+  <g transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)">
+    <text x="328.08856201171875" y="-548.07763671875" style="fill: rgb(0,0,255); fill-opacity: 0.2509804; font-family: sans-serif; font-size: 12px;">c</text>
+  </g>
+  <line x1="265.0" y1="-437.0" x2="415.0" y2="-382.0" style="stroke-width:1.0;stroke:rgb(0,0,255);stroke-opacity:0.2509804;stroke-linecap:square;stroke-miterlimit:10.0" transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)"/>
+  <line x1="415.0" y1="-382.0" x2="265.0" y2="-382.0" style="stroke-width:1.0;stroke:rgb(0,0,255);stroke-opacity:0.2509804;stroke-linecap:square;stroke-miterlimit:10.0" transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)"/>
+  <line x1="265.0" y1="-382.0" x2="265.0" y2="-437.0" style="stroke-width:1.0;stroke:rgb(0,0,255);stroke-opacity:0.2509804;stroke-linecap:square;stroke-miterlimit:10.0" transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)"/>
+  <g transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)">
+    <text x="278.0538330078125" y="-418.58685302734375" style="fill: rgb(0,0,255); fill-opacity: 0.2509804; font-family: sans-serif; font-size: 12px;">a</text>
+  </g>
+  <g transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)">
+    <text x="378.31427001953125" y="-381.3472595214844" style="fill: rgb(0,0,255); fill-opacity: 0.2509804; font-family: sans-serif; font-size: 12px;">b</text>
+  </g>
+  <g transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)">
+    <text x="278.5538330078125" y="-381.3472595214844" style="fill: rgb(0,0,255); fill-opacity: 0.2509804; font-family: sans-serif; font-size: 12px;">c</text>
+  </g>
+  <line x1="265.0" y1="-382.0" x2="193.0" y2="0.0" style="stroke-width:1.0;stroke:rgb(0,0,255);stroke-opacity:0.2509804;stroke-linecap:square;stroke-miterlimit:10.0" transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)"/>
+  <line x1="193.0" y1="0.0" x2="193.0" y2="-382.0" style="stroke-width:1.0;stroke:rgb(0,0,255);stroke-opacity:0.2509804;stroke-linecap:square;stroke-miterlimit:10.0" transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)"/>
+  <line x1="193.0" y1="-382.0" x2="265.0" y2="-382.0" style="stroke-width:1.0;stroke:rgb(0,0,255);stroke-opacity:0.2509804;stroke-linecap:square;stroke-miterlimit:10.0" transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)"/>
+  <g transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)">
+    <text x="245.37155151367188" y="-332.73614501953125" style="fill: rgb(0,0,255); fill-opacity: 0.2509804; font-family: sans-serif; font-size: 12px;">a</text>
+  </g>
+  <g transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)">
+    <text x="197.4548797607422" y="-78.30903625488281" style="fill: rgb(0,0,255); fill-opacity: 0.2509804; font-family: sans-serif; font-size: 12px;">b</text>
+  </g>
+  <g transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)">
+    <text x="197.9548797607422" y="-332.73614501953125" style="fill: rgb(0,0,255); fill-opacity: 0.2509804; font-family: sans-serif; font-size: 12px;">c</text>
+  </g>
+  <line x1="201.0" y1="-530.0" x2="266.0" y2="-495.0" style="stroke-width:1.0;stroke:rgb(0,0,255);stroke-opacity:0.2509804;stroke-linecap:square;stroke-miterlimit:10.0" transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)"/>
+  <line x1="266.0" y1="-495.0" x2="195.0" y2="-502.0" style="stroke-width:1.0;stroke:rgb(0,0,255);stroke-opacity:0.2509804;stroke-linecap:square;stroke-miterlimit:10.0" transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)"/>
+  <line x1="195.0" y1="-502.0" x2="201.0" y2="-530.0" style="stroke-width:1.0;stroke:rgb(0,0,255);stroke-opacity:0.2509804;stroke-linecap:square;stroke-miterlimit:10.0" transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)"/>
+  <g transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)">
+    <text x="204.205078125" y="-516.7109375" style="fill: rgb(0,0,255); fill-opacity: 0.2509804; font-family: sans-serif; font-size: 12px;">a</text>
+  </g>
+  <g transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)">
+    <text x="247.248046875" y="-492.9720153808594" style="fill: rgb(0,0,255); fill-opacity: 0.2509804; font-family: sans-serif; font-size: 12px;">b</text>
+  </g>
+  <g transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)">
+    <text x="200.580078125" y="-497.48895263671875" style="fill: rgb(0,0,255); fill-opacity: 0.2509804; font-family: sans-serif; font-size: 12px;">c</text>
+  </g>
+  <line x1="301.0" y1="-544.0" x2="296.0" y2="-606.0" style="stroke-width:1.0;stroke:rgb(0,0,255);stroke-opacity:0.2509804;stroke-linecap:square;stroke-miterlimit:10.0" transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)"/>
+  <line x1="296.0" y1="-606.0" x2="316.0" y2="-547.0" style="stroke-width:1.0;stroke:rgb(0,0,255);stroke-opacity:0.2509804;stroke-linecap:square;stroke-miterlimit:10.0" transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)"/>
+  <line x1="316.0" y1="-547.0" x2="301.0" y2="-544.0" style="stroke-width:1.0;stroke:rgb(0,0,255);stroke-opacity:0.2509804;stroke-linecap:square;stroke-miterlimit:10.0" transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)"/>
+  <g transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)">
+    <text x="298.4759216308594" y="-544.763916015625" style="fill: rgb(0,0,255); fill-opacity: 0.2509804; font-family: sans-serif; font-size: 12px;">a</text>
+  </g>
+  <g transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)">
+    <text x="295.4251403808594" y="-585.8297119140625" style="fill: rgb(0,0,255); fill-opacity: 0.2509804; font-family: sans-serif; font-size: 12px;">b</text>
+  </g>
+  <g transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)">
+    <text x="308.9134216308594" y="-546.742431640625" style="fill: rgb(0,0,255); fill-opacity: 0.2509804; font-family: sans-serif; font-size: 12px;">c</text>
+  </g>
+  <line x1="265.0" y1="-437.0" x2="265.0" y2="-382.0" style="stroke-width:1.0;stroke:rgb(0,0,255);stroke-opacity:0.2509804;stroke-linecap:square;stroke-miterlimit:10.0" transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)"/>
+  <line x1="265.0" y1="-382.0" x2="193.0" y2="-382.0" style="stroke-width:1.0;stroke:rgb(0,0,255);stroke-opacity:0.2509804;stroke-linecap:square;stroke-miterlimit:10.0" transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)"/>
+  <line x1="193.0" y1="-382.0" x2="265.0" y2="-437.0" style="stroke-width:1.0;stroke:rgb(0,0,255);stroke-opacity:0.2509804;stroke-linecap:square;stroke-miterlimit:10.0" transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)"/>
+  <g transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)">
+    <text x="253.357666015625" y="-418.58685302734375" style="fill: rgb(0,0,255); fill-opacity: 0.2509804; font-family: sans-serif; font-size: 12px;">a</text>
+  </g>
+  <g transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)">
+    <text x="253.357666015625" y="-381.3472595214844" style="fill: rgb(0,0,255); fill-opacity: 0.2509804; font-family: sans-serif; font-size: 12px;">b</text>
+  </g>
+  <g transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)">
+    <text x="205.94097900390625" y="-381.3472595214844" style="fill: rgb(0,0,255); fill-opacity: 0.2509804; font-family: sans-serif; font-size: 12px;">c</text>
+  </g>
+  <line x1="296.0" y1="-606.0" x2="301.0" y2="-544.0" style="stroke-width:1.0;stroke:rgb(0,0,255);stroke-opacity:0.2509804;stroke-linecap:square;stroke-miterlimit:10.0" transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)"/>
+  <line x1="301.0" y1="-544.0" x2="268.0" y2="-599.0" style="stroke-width:1.0;stroke:rgb(0,0,255);stroke-opacity:0.2509804;stroke-linecap:square;stroke-miterlimit:10.0" transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)"/>
+  <line x1="268.0" y1="-599.0" x2="296.0" y2="-606.0" style="stroke-width:1.0;stroke:rgb(0,0,255);stroke-opacity:0.2509804;stroke-linecap:square;stroke-miterlimit:10.0" transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)"/>
+  <g transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)">
+    <text x="290.144775390625" y="-591.63623046875" style="fill: rgb(0,0,255); fill-opacity: 0.2509804; font-family: sans-serif; font-size: 12px;">a</text>
+  </g>
+  <g transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)">
+    <text x="293.195556640625" y="-550.5704345703125" style="fill: rgb(0,0,255); fill-opacity: 0.2509804; font-family: sans-serif; font-size: 12px;">b</text>
+  </g>
+  <g transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)">
+    <text x="271.95074462890625" y="-587.38818359375" style="fill: rgb(0,0,255); fill-opacity: 0.2509804; font-family: sans-serif; font-size: 12px;">c</text>
+  </g>
+  <line x1="193.0" y1="-437.0" x2="265.0" y2="-437.0" style="stroke-width:1.0;stroke:rgb(0,0,255);stroke-opacity:0.2509804;stroke-linecap:square;stroke-miterlimit:10.0" transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)"/>
+  <line x1="265.0" y1="-437.0" x2="193.0" y2="-382.0" style="stroke-width:1.0;stroke:rgb(0,0,255);stroke-opacity:0.2509804;stroke-linecap:square;stroke-miterlimit:10.0" transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)"/>
+  <line x1="193.0" y1="-382.0" x2="193.0" y2="-437.0" style="stroke-width:1.0;stroke:rgb(0,0,255);stroke-opacity:0.2509804;stroke-linecap:square;stroke-miterlimit:10.0" transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)"/>
+  <g transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)">
+    <text x="197.4548797607422" y="-424.7934265136719" style="fill: rgb(0,0,255); fill-opacity: 0.2509804; font-family: sans-serif; font-size: 12px;">a</text>
+  </g>
+  <g transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)">
+    <text x="245.37155151367188" y="-424.7934265136719" style="fill: rgb(0,0,255); fill-opacity: 0.2509804; font-family: sans-serif; font-size: 12px;">b</text>
+  </g>
+  <g transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)">
+    <text x="197.9548797607422" y="-387.5538330078125" style="fill: rgb(0,0,255); fill-opacity: 0.2509804; font-family: sans-serif; font-size: 12px;">c</text>
+  </g>
+  <line x1="289.0" y1="-539.0" x2="268.0" y2="-599.0" style="stroke-width:1.0;stroke:rgb(0,0,255);stroke-opacity:0.2509804;stroke-linecap:square;stroke-miterlimit:10.0" transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)"/>
+  <line x1="268.0" y1="-599.0" x2="301.0" y2="-544.0" style="stroke-width:1.0;stroke:rgb(0,0,255);stroke-opacity:0.2509804;stroke-linecap:square;stroke-miterlimit:10.0" transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)"/>
+  <line x1="301.0" y1="-544.0" x2="289.0" y2="-539.0" style="stroke-width:1.0;stroke:rgb(0,0,255);stroke-opacity:0.2509804;stroke-linecap:square;stroke-miterlimit:10.0" transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)"/>
+  <g transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)">
+    <text x="284.4071350097656" y="-539.8790283203125" style="fill: rgb(0,0,255); fill-opacity: 0.2509804; font-family: sans-serif; font-size: 12px;">a</text>
+  </g>
+  <g transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)">
+    <text x="270.631103515625" y="-579.9942626953125" style="fill: rgb(0,0,255); fill-opacity: 0.2509804; font-family: sans-serif; font-size: 12px;">b</text>
+  </g>
+  <g transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)">
+    <text x="292.8758850097656" y="-543.1765747070312" style="fill: rgb(0,0,255); fill-opacity: 0.2509804; font-family: sans-serif; font-size: 12px;">c</text>
+  </g>
+  <line x1="193.0" y1="-468.0" x2="265.0" y2="-437.0" style="stroke-width:1.0;stroke:rgb(0,0,255);stroke-opacity:0.2509804;stroke-linecap:square;stroke-miterlimit:10.0" transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)"/>
+  <line x1="265.0" y1="-437.0" x2="193.0" y2="-437.0" style="stroke-width:1.0;stroke:rgb(0,0,255);stroke-opacity:0.2509804;stroke-linecap:square;stroke-miterlimit:10.0" transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)"/>
+  <line x1="193.0" y1="-437.0" x2="193.0" y2="-468.0" style="stroke-width:1.0;stroke:rgb(0,0,255);stroke-opacity:0.2509804;stroke-linecap:square;stroke-miterlimit:10.0" transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)"/>
+  <g transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)">
+    <text x="197.4548797607422" y="-454.69793701171875" style="fill: rgb(0,0,255); fill-opacity: 0.2509804; font-family: sans-serif; font-size: 12px;">a</text>
+  </g>
+  <g transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)">
+    <text x="245.37155151367188" y="-434.38543701171875" style="fill: rgb(0,0,255); fill-opacity: 0.2509804; font-family: sans-serif; font-size: 12px;">b</text>
+  </g>
+  <g transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)">
+    <text x="197.9548797607422" y="-434.38543701171875" style="fill: rgb(0,0,255); fill-opacity: 0.2509804; font-family: sans-serif; font-size: 12px;">c</text>
+  </g>
+  <line x1="245.0" y1="-589.0" x2="289.0" y2="-539.0" style="stroke-width:1.0;stroke:rgb(0,0,255);stroke-opacity:0.2509804;stroke-linecap:square;stroke-miterlimit:10.0" transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)"/>
+  <line x1="289.0" y1="-539.0" x2="280.0" y2="-532.0" style="stroke-width:1.0;stroke:rgb(0,0,255);stroke-opacity:0.2509804;stroke-linecap:square;stroke-miterlimit:10.0" transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)"/>
+  <line x1="280.0" y1="-532.0" x2="245.0" y2="-589.0" style="stroke-width:1.0;stroke:rgb(0,0,255);stroke-opacity:0.2509804;stroke-linecap:square;stroke-miterlimit:10.0" transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)"/>
+  <g transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)">
+    <text x="250.08139038085938" y="-570.4151611328125" style="fill: rgb(0,0,255); fill-opacity: 0.2509804; font-family: sans-serif; font-size: 12px;">a</text>
+  </g>
+  <g transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)">
+    <text x="279.4759216308594" y="-537.3800048828125" style="fill: rgb(0,0,255); fill-opacity: 0.2509804; font-family: sans-serif; font-size: 12px;">b</text>
+  </g>
+  <g transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)">
+    <text x="273.9759216308594" y="-532.7634887695312" style="fill: rgb(0,0,255); fill-opacity: 0.2509804; font-family: sans-serif; font-size: 12px;">c</text>
+  </g>
+  <line x1="265.0" y1="-437.0" x2="193.0" y2="-468.0" style="stroke-width:1.0;stroke:rgb(0,0,255);stroke-opacity:0.2509804;stroke-linecap:square;stroke-miterlimit:10.0" transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)"/>
+  <line x1="193.0" y1="-468.0" x2="265.0" y2="-476.0" style="stroke-width:1.0;stroke:rgb(0,0,255);stroke-opacity:0.2509804;stroke-linecap:square;stroke-miterlimit:10.0" transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)"/>
+  <line x1="265.0" y1="-476.0" x2="265.0" y2="-437.0" style="stroke-width:1.0;stroke:rgb(0,0,255);stroke-opacity:0.2509804;stroke-linecap:square;stroke-miterlimit:10.0" transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)"/>
+  <g transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)">
+    <text x="253.357666015625" y="-438.68231201171875" style="fill: rgb(0,0,255); fill-opacity: 0.2509804; font-family: sans-serif; font-size: 12px;">a</text>
+  </g>
+  <g transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)">
+    <text x="205.44097900390625" y="-458.99481201171875" style="fill: rgb(0,0,255); fill-opacity: 0.2509804; font-family: sans-serif; font-size: 12px;">b</text>
+  </g>
+  <g transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)">
+    <text x="253.857666015625" y="-464.46356201171875" style="fill: rgb(0,0,255); fill-opacity: 0.2509804; font-family: sans-serif; font-size: 12px;">c</text>
+  </g>
+  <line x1="273.0" y1="-523.0" x2="226.0" y2="-574.0" style="stroke-width:1.0;stroke:rgb(0,0,255);stroke-opacity:0.2509804;stroke-linecap:square;stroke-miterlimit:10.0" transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)"/>
+  <line x1="226.0" y1="-574.0" x2="280.0" y2="-532.0" style="stroke-width:1.0;stroke:rgb(0,0,255);stroke-opacity:0.2509804;stroke-linecap:square;stroke-miterlimit:10.0" transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)"/>
+  <line x1="280.0" y1="-532.0" x2="273.0" y2="-523.0" style="stroke-width:1.0;stroke:rgb(0,0,255);stroke-opacity:0.2509804;stroke-linecap:square;stroke-miterlimit:10.0" transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)"/>
+  <g transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)">
+    <text x="265.2706298828125" y="-523.0055541992188" style="fill: rgb(0,0,255); fill-opacity: 0.2509804; font-family: sans-serif; font-size: 12px;">a</text>
+  </g>
+  <g transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)">
+    <text x="233.71725463867188" y="-557.0335693359375" style="fill: rgb(0,0,255); fill-opacity: 0.2509804; font-family: sans-serif; font-size: 12px;">b</text>
+  </g>
+  <g transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)">
+    <text x="270.1547546386719" y="-529.2939453125" style="fill: rgb(0,0,255); fill-opacity: 0.2509804; font-family: sans-serif; font-size: 12px;">c</text>
+  </g>
+  <line x1="195.0" y1="-502.0" x2="265.0" y2="-476.0" style="stroke-width:1.0;stroke:rgb(0,0,255);stroke-opacity:0.2509804;stroke-linecap:square;stroke-miterlimit:10.0" transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)"/>
+  <line x1="265.0" y1="-476.0" x2="193.0" y2="-468.0" style="stroke-width:1.0;stroke:rgb(0,0,255);stroke-opacity:0.2509804;stroke-linecap:square;stroke-miterlimit:10.0" transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)"/>
+  <line x1="193.0" y1="-468.0" x2="195.0" y2="-502.0" style="stroke-width:1.0;stroke:rgb(0,0,255);stroke-opacity:0.2509804;stroke-linecap:square;stroke-miterlimit:10.0" transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)"/>
+  <g transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)">
+    <text x="199.05905151367188" y="-488.4897155761719" style="fill: rgb(0,0,255); fill-opacity: 0.2509804; font-family: sans-serif; font-size: 12px;">a</text>
+  </g>
+  <g transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)">
+    <text x="245.6007080078125" y="-471.57891845703125" style="fill: rgb(0,0,255); fill-opacity: 0.2509804; font-family: sans-serif; font-size: 12px;">b</text>
+  </g>
+  <g transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)">
+    <text x="198.18405151367188" y="-466.11016845703125" style="fill: rgb(0,0,255); fill-opacity: 0.2509804; font-family: sans-serif; font-size: 12px;">c</text>
+  </g>
+  <line x1="226.0" y1="-574.0" x2="273.0" y2="-523.0" style="stroke-width:1.0;stroke:rgb(0,0,255);stroke-opacity:0.2509804;stroke-linecap:square;stroke-miterlimit:10.0" transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)"/>
+  <line x1="273.0" y1="-523.0" x2="212.0" y2="-554.0" style="stroke-width:1.0;stroke:rgb(0,0,255);stroke-opacity:0.2509804;stroke-linecap:square;stroke-miterlimit:10.0" transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)"/>
+  <line x1="212.0" y1="-554.0" x2="226.0" y2="-574.0" style="stroke-width:1.0;stroke:rgb(0,0,255);stroke-opacity:0.2509804;stroke-linecap:square;stroke-miterlimit:10.0" transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)"/>
+  <g transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)">
+    <text x="226.12350463867188" y="-559.5056762695312" style="fill: rgb(0,0,255); fill-opacity: 0.2509804; font-family: sans-serif; font-size: 12px;">a</text>
+  </g>
+  <g transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)">
+    <text x="257.6768798828125" y="-525.4776611328125" style="fill: rgb(0,0,255); fill-opacity: 0.2509804; font-family: sans-serif; font-size: 12px;">b</text>
+  </g>
+  <g transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)">
+    <text x="216.99850463867188" y="-546.5987548828125" style="fill: rgb(0,0,255); fill-opacity: 0.2509804; font-family: sans-serif; font-size: 12px;">c</text>
+  </g>
+  <line x1="265.0" y1="-476.0" x2="195.0" y2="-502.0" style="stroke-width:1.0;stroke:rgb(0,0,255);stroke-opacity:0.2509804;stroke-linecap:square;stroke-miterlimit:10.0" transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)"/>
+  <line x1="195.0" y1="-502.0" x2="266.0" y2="-495.0" style="stroke-width:1.0;stroke:rgb(0,0,255);stroke-opacity:0.2509804;stroke-linecap:square;stroke-miterlimit:10.0" transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)"/>
+  <line x1="266.0" y1="-495.0" x2="265.0" y2="-476.0" style="stroke-width:1.0;stroke:rgb(0,0,255);stroke-opacity:0.2509804;stroke-linecap:square;stroke-miterlimit:10.0" transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)"/>
+  <g transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)">
+    <text x="253.69122314453125" y="-474.5559997558594" style="fill: rgb(0,0,255); fill-opacity: 0.2509804; font-family: sans-serif; font-size: 12px;">a</text>
+  </g>
+  <g transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)">
+    <text x="207.1495361328125" y="-491.466796875" style="fill: rgb(0,0,255); fill-opacity: 0.2509804; font-family: sans-serif; font-size: 12px;">b</text>
+  </g>
+  <g transform="matrix(1.0,0.0,0.0,1.0,-46.171875,637.8125)">
+    <text x="254.8175048828125" y="-486.94989013671875" style="fill: rgb(0,0,255); fill-opacity: 0.2509804; font-family: sans-serif; font-size: 12px;">c</text>
+  </g>
+</svg>
