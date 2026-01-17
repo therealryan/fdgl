@@ -36,7 +36,7 @@ jobs:
           git config user.name "GitHub Actions"
 
       - name: Publish package
-        run: mvn -B release:prepare release:perform
+        run: mvn -B release:prepare release:perform -Dci=true
         env:
           # from https://central.sonatype.com/usertoken
           MAVEN_USERNAME: ${{ secrets.CENTRAL_TOKEN_USERNAME }}
