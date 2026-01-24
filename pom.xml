@@ -36,6 +36,7 @@
     <module>util</module>
     <module>xml</module>
     <module>bom</module>
+    <module>doc</module>
   </modules>
 
   <scm>
