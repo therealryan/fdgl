@@ -5,7 +5,7 @@
   <parent>
     <groupId>dev.flowty.gl.shape</groupId>
     <artifactId>shape</artifactId>
-    <version>0.0.5-SNAPSHOT</version>
+    <version>0.0.5</version>
   </parent>
   <artifactId>font</artifactId>
   <packaging>jar</packaging>
