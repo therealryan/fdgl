@@ -21,7 +21,9 @@ public class ReadmeInterlink {
   public boolean regenerate(PomData pom) {
     return Util.insert(pom.dirPath().resolve("README.md"),
         TITLE_START,
-        existing -> compliant(existing, pom) ? existing : title(pom),
+        existing -> compliant(existing, pom)
+            ? existing
+            : title(pom),
         TITLE_END);
   }
 
@@ -29,6 +31,7 @@ public class ReadmeInterlink {
     return section.contains(pom.name())
         && section.contains(pom.description())
         && section.contains(parentLink(pom))
+        && section.contains(artifactBadge(pom))
         && section.contains(javadocBadge(pom))
         && childLinks(pom)
         .map(String::trim)
@@ -49,6 +52,16 @@ public class ReadmeInterlink {
     // general case, works on 2nd level and, presumably, beyond
     return String.format("\n * [../%s](..) %s",
         pom.parent().name(), pom.parent().description());
+  }
+
+  private static String artifactBadge(PomData pom) {
+    if ("jar".equals(pom.packaging())) {
+      return String.format(
+          "![Maven Central Version](https://img.shields.io/maven-central/v/%s/%s)",
+          pom.groupId(), pom.artifactId());
+    }
+
+    return "";
   }
 
   private static String javadocBadge(PomData pom) {
@@ -78,11 +91,13 @@ public class ReadmeInterlink {
                 + "\n"
                 + "%s\n" // description
                 + "\n"
+                + "%s\n" // artifact version badge
                 + "%s\n" // javadoc badge
                 + "%s\n" // parent link
                 + "%s", // child links
             pom.name(),
             pom.description(),
+            artifactBadge(pom),
             javadocBadge(pom),
             parentLink(pom),
             childLinks(pom).collect(joining()))

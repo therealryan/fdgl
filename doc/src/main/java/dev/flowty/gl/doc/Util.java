@@ -28,7 +28,7 @@ public class Util {
    */
   static boolean insert(Path path, String start, UnaryOperator<String> content, String end) {
     try {
-      String existing = "";
+      String existing = start + "\n" + end;
       if (Files.exists(path)) {
         existing = new String(Files.readAllBytes(path), UTF_8);
       }

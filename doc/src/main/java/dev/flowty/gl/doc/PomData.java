@@ -136,7 +136,7 @@ class PomData {
    * @return The project's packaging value
    */
   public String packaging() {
-    return packaging;
+    return packaging.isEmpty() ? "jar" : packaging;
   }
 
   /**
@@ -171,7 +171,7 @@ class PomData {
    * @return Project name
    */
   public String name() {
-    return name.isEmpty() ? artifactId : name;
+    return name.isEmpty() || "${project.artifactId}".equals(name) ? artifactId : name;
   }
 
   /**
