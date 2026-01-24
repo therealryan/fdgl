@@ -9,7 +9,10 @@
   </parent>
   <artifactId>shader-test</artifactId>
   <packaging>jar</packaging>
-  <description>shader test utilities</description>
+
+  <name>${project.artifactId}</name>
+  <description>Shader test utilities</description>
+  <url>https://github.com/therealryan/fdgl</url>
 
   <dependencies>
     <dependency>

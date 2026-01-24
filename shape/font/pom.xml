@@ -10,6 +10,10 @@
   <artifactId>font</artifactId>
   <packaging>jar</packaging>
 
+  <name>${project.artifactId}</name>
+  <description>Geometric font support</description>
+  <url>https://github.com/therealryan/fdgl</url>
+
   <dependencies>
 
     <dependency>

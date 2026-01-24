@@ -10,6 +10,10 @@
   <artifactId>topology</artifactId>
   <packaging>jar</packaging>
 
+  <name>${project.artifactId}</name>
+  <description>Defines vertex/edge/face connectivity</description>
+  <url>https://github.com/therealryan/fdgl</url>
+
   <dependencies>
 
     <dependency>

@@ -10,6 +10,10 @@
   <artifactId>model</artifactId>
   <packaging>jar</packaging>
 
+  <name>${project.artifactId}</name>
+  <description>Object model for configurable types</description>
+  <url>https://github.com/therealryan/fdgl</url>
+
   <dependencies>
 
     <dependency>

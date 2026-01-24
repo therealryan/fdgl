@@ -10,6 +10,10 @@
   <artifactId>util</artifactId>
   <packaging>jar</packaging>
 
+  <name>${project.artifactId}</name>
+  <description>Common utilities</description>
+  <url>https://github.com/therealryan/fdgl</url>
+
   <dependencies>
 
     <dependency>

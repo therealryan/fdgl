@@ -11,6 +11,14 @@
   <description>Minimal game lib</description>
   <url>https://github.com/therealryan/fdgl</url>
 
+  <licenses>
+    <license>
+      <name>MIT License</name>
+      <url>https://opensource.org/licenses/MIT</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+
   <developers>
     <developer>
       <name>Ryan McNally</name>
@@ -30,14 +38,6 @@
     <module>bom</module>
   </modules>
 
-  <licenses>
-    <license>
-      <name>MIT License</name>
-      <url>https://opensource.org/licenses/MIT</url>
-      <distribution>repo</distribution>
-    </license>
-  </licenses>
-
   <scm>
     <connection>scm:git:https://github.com/therealryan/fdgl.git</connection>
     <developerConnection>scm:git:https://github.com/therealryan/fdgl.git</developerConnection>
@@ -48,7 +48,8 @@
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.release>22</maven.compiler.release>
-    <ci>false</ci> <!-- Set to true to in CI contexts, avoids, e.g.: graphical tests -->
+    <ci>false</ci>
+    <!-- Set to true to in CI contexts, avoids, e.g.: graphical tests -->
   </properties>
 
   <dependencyManagement>

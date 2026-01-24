@@ -11,6 +11,10 @@
   <artifactId>sound</artifactId>
   <packaging>pom</packaging>
 
+  <name>${project.artifactId}</name>
+  <description>Parent pom for sound artifacts</description>
+  <url>https://github.com/therealryan/fdgl</url>
+
   <modules>
     <module>generation</module>
     <module>play</module>

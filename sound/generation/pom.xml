@@ -10,4 +10,8 @@
   <artifactId>generation</artifactId>
   <packaging>jar</packaging>
 
+  <name>${project.artifactId}</name>
+  <description>Sound generation utilities</description>
+  <url>https://github.com/therealryan/fdgl</url>
+
 </project>

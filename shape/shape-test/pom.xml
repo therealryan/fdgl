@@ -9,7 +9,10 @@
   </parent>
   <artifactId>shape-test</artifactId>
   <packaging>jar</packaging>
-  <description>test support</description>
+
+  <name>${project.artifactId}</name>
+  <description>Shape test support</description>
+  <url>https://github.com/therealryan/fdgl</url>
 
   <dependencies>
     <dependency>

@@ -10,6 +10,10 @@
   <artifactId>event</artifactId>
   <packaging>jar</packaging>
 
+  <name>${project.artifactId}</name>
+  <description>Event-routing framework</description>
+  <url>https://github.com/therealryan/fdgl</url>
+
   <dependencies>
 
     <dependency>

@@ -10,6 +10,10 @@
   <artifactId>framework</artifactId>
   <packaging>jar</packaging>
 
+  <name>${project.artifactId}</name>
+  <description>Composed game framework</description>
+  <url>https://github.com/therealryan/fdgl</url>
+
   <dependencies>
     <dependency>
       <groupId>org.lwjgl</groupId>

@@ -7,10 +7,14 @@
     <artifactId>root</artifactId>
     <version>0.0.4-SNAPSHOT</version>
   </parent>
+
   <groupId>dev.flowty.gl.shader</groupId>
   <artifactId>shader</artifactId>
   <packaging>pom</packaging>
-  <description>GLSL shader utilities</description>
+
+  <name>${project.artifactId}</name>
+  <description>Parent pom for shader artifacts</description>
+  <url>https://github.com/therealryan/fdgl</url>
 
   <modules>
     <module>core</module>

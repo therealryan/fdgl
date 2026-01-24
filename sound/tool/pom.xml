@@ -9,6 +9,10 @@
   <artifactId>tool</artifactId>
   <packaging>jar</packaging>
 
+  <name>${project.artifactId}</name>
+  <description>Sound generation UI</description>
+  <url>https://github.com/therealryan/fdgl</url>
+
   <!-- this stuff would be more convenient in generation's test
        dir, but I'm not clever or resilient enough to work through
        the jpms pain -->

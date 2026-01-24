@@ -9,7 +9,10 @@
   </parent>
   <artifactId>fluid</artifactId>
   <packaging>jar</packaging>
+
+  <name>${project.artifactId}</name>
   <description>Fluid dynamics shader</description>
+  <url>https://github.com/therealryan/fdgl</url>
 
   <dependencies>
     <dependency>

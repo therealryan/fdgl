@@ -11,6 +11,10 @@
   <artifactId>config</artifactId>
   <packaging>pom</packaging>
 
+  <name>${project.artifactId}</name>
+  <description>Parent pom for config artifacts</description>
+  <url>https://github.com/therealryan/fdgl</url>
+
   <modules>
     <module>model</module>
     <module>ui</module>

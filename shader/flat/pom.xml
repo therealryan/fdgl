@@ -9,7 +9,10 @@
   </parent>
   <artifactId>flat</artifactId>
   <packaging>jar</packaging>
+
+  <name>${project.artifactId}</name>
   <description>Flat-colouring shader</description>
+  <url>https://github.com/therealryan/fdgl</url>
 
   <dependencies>
     <dependency>
