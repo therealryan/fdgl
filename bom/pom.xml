@@ -16,7 +16,6 @@
 
   <dependencyManagement>
     <dependencies>
-
       <dependency>
         <groupId>${project.groupId}.config</groupId>
         <artifactId>model</artifactId>
@@ -30,14 +29,8 @@
       </dependency>
 
       <dependency>
-        <groupId>${project.groupId}</groupId>
-        <artifactId>event</artifactId>
-        <version>${project.version}</version>
-      </dependency>
-
-      <dependency>
-        <groupId>${project.groupId}</groupId>
-        <artifactId>framework</artifactId>
+        <groupId>${project.groupId}.shader</groupId>
+        <artifactId>core</artifactId>
         <version>${project.version}</version>
       </dependency>
 
@@ -54,6 +47,18 @@
       </dependency>
 
       <dependency>
+        <groupId>${project.groupId}.shader</groupId>
+        <artifactId>shader-test</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>${project.groupId}.shape</groupId>
+        <artifactId>core</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+
+      <dependency>
         <groupId>${project.groupId}.shape</groupId>
         <artifactId>font</artifactId>
         <version>${project.version}</version>
@@ -62,6 +67,12 @@
       <dependency>
         <groupId>${project.groupId}.shape</groupId>
         <artifactId>geometry</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>${project.groupId}.shape</groupId>
+        <artifactId>shape-test</artifactId>
         <version>${project.version}</version>
       </dependency>
 
@@ -84,6 +95,30 @@
       </dependency>
 
       <dependency>
+        <groupId>${project.groupId}.sound</groupId>
+        <artifactId>tool</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>${project.groupId}</groupId>
+        <artifactId>doc</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>${project.groupId}</groupId>
+        <artifactId>event</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>${project.groupId}</groupId>
+        <artifactId>framework</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+
+      <dependency>
         <groupId>${project.groupId}</groupId>
         <artifactId>util</artifactId>
         <version>${project.version}</version>
@@ -94,7 +129,6 @@
         <artifactId>xml</artifactId>
         <version>${project.version}</version>
       </dependency>
-
     </dependencies>
   </dependencyManagement>
 
