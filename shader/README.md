@@ -4,6 +4,7 @@
 
 Parent pom for shader artifacts
 
+[![Maven Central Version](https://img.shields.io/maven-central/v/dev.flowty.gl.shader/shader)](https://central.sonatype.com/artifact/dev.flowty.gl.shader/shader)
 
 
  * [../fdgl](https://github.com/therealryan/fdgl) Minimal game lib

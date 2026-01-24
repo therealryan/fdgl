@@ -55,13 +55,13 @@ public class ReadmeInterlink {
   }
 
   private static String artifactBadge(PomData pom) {
-    if ("jar".equals(pom.packaging())) {
-      return String.format(
-          "![Maven Central Version](https://img.shields.io/maven-central/v/%s/%s)",
-          pom.groupId(), pom.artifactId());
-    }
+    return String.format(""
+            + "["
+            + "![Maven Central Version](https://img.shields.io/maven-central/v/%s/%s)"
+            + "]"
+            + "(https://central.sonatype.com/artifact/%s/%s)",
+        pom.groupId(), pom.artifactId(), pom.groupId(), pom.artifactId());
 
-    return "";
   }
 
   private static String javadocBadge(PomData pom) {

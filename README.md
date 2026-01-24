@@ -4,6 +4,7 @@
 
 Minimal game lib
 
+[![Maven Central Version](https://img.shields.io/maven-central/v/dev.flowty.gl/root)](https://central.sonatype.com/artifact/dev.flowty.gl/root)
 
 
  * [config](config) Parent pom for config artifacts

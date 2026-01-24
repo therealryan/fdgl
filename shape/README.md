@@ -4,6 +4,7 @@
 
 Parent pom for shape artifacts
 
+[![Maven Central Version](https://img.shields.io/maven-central/v/dev.flowty.gl.shape/shape)](https://central.sonatype.com/artifact/dev.flowty.gl.shape/shape)
 
 
  * [../fdgl](https://github.com/therealryan/fdgl) Minimal game lib
